@@ -39,7 +39,7 @@
 SSL is currently **not** supported. You have to manage this by your own. (But i planned it to be a future feature.)
 
 
-### RoutesY
+### Routes
 Terrastate is written by considering the specifications of [Terraforms http backend](https://www.terraform.io/docs/backends/types/http.html).  
 Therefore the routes are self mostly explaining.  
 "/list" is an exception and added by the idea to have a slight overview of the stored states.
@@ -50,3 +50,6 @@ Overview:
 - "/{ident}" [POST]
 - "/{ident}/lock" [LOCK]
 - "/{ident}/unlock" [UNLOCK]
+
+### Notice / Contribution
+This is my first go project. There are many things which could be done better and I already have a little todo list. If you think there are some critical things which should be prioritized please open an issue about it. Thank you!
