@@ -1,4 +1,4 @@
-# **!!! WIP !!!** Terrastate HTTP **!!! WIP !!!**
+# Terrastate HTTP
 
 > A simple standalone webserver for [Terraform HTTP remote state](https://www.terraform.io/docs/backends/types/http.html) written in [Go](https://golang.org/).
 
@@ -8,6 +8,8 @@
 - Overview of stored states
 
 ## Usage
+### Known issue
+- For now you have to provide a JSON config file. The most minimum content has to be: `{}`
 
 1. Starting docker container:
    ```bash
@@ -16,7 +18,7 @@
      --publish 8080:8080 \
      --volume $(pwd)/example-config.json:/mnt/configs/config.json \
      --volume $(pwd)/sqlite3/:/mnt/sqlite3/ \
-     terrastate-http
+     psolru/terrastate-http
    ```
 
 2. Configure Terraform (e.g. in backend.yml):
