@@ -21,6 +21,5 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_TOKEN }}
-        repository: terrastate-http
+        repository: psolru/terrastate-http
         tag_with_ref: true
-        target: mytarget
